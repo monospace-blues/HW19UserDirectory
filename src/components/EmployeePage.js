@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import DUMMYDATA from './DUMMYDATA.json';
+import Table from './Table';
 
 function EmployeeDir() {
 
@@ -7,10 +8,7 @@ function EmployeeDir() {
   const [searchResults, setSearchResults] = useState([]);
   const [select, setSelect] = useState("name");
   
-  
-  
-  
-
+  // any changes to the input field causes this useEffect to update our table
   useEffect(() => {
     const data = DUMMYDATA;
     let results;
@@ -28,6 +26,7 @@ function EmployeeDir() {
     
   }, [search])
 
+  // listening events
   function handleChange (e) {
     console.log(e.target.value);
     setSearch(e.target.value);
@@ -43,19 +42,18 @@ function EmployeeDir() {
   return (
     <div>
       <h1>Employee Directory!!</h1>
+      {/* Form Input */}
       <form>
-        <input type="text" value={search} placeholder="Search by FirstName" onChange={handleChange}/>
+        <input type="text" value={search} placeholder="Search by " onChange={handleChange}/>
         <select onChange={handleSelect}>
           <option selected value="name">Name</option>
           <option value="wages">Wages</option>
         </select>
-
       </form>
-      <div>
-        {searchResults.map((employee, index) => (
-          <p key={index}>{employee.employeeName} Hours: {employee.hoursWorked} Wages: {employee.wages} Hired: {employee.hiredDate}</p>
-        ))}
-      </div> 
+
+      {/* Displaying the Table */}  
+      <Table searchRes={searchResults}/>
+
     </div>
   );
 }
