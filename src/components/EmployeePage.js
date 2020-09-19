@@ -16,7 +16,8 @@ function EmployeeDir() {
       results = data.filter(emp =>
         emp.wages.includes(search)
       );
-    } else if (select === "name") {
+    } 
+    else if (select === "name") {
       results = data.filter(emp =>
         emp.employeeName.toLowerCase().includes(search.toLowerCase())
       );
