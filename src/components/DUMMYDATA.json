@@ -1,0 +1,44 @@
+[
+  {
+    "employeeName": "Samantha",
+    "hoursWorked": 40,
+    "hiredDate": 2007,
+    "wages": "$12"
+  },
+  {
+    "employeeName": "Richard",
+    "hoursWorked": 20,
+    "hiredDate": 2019,
+    "wages": "$10"
+  },
+  {
+    "employeeName": "Carl",
+    "hoursWorked": 40,
+    "hiredDate": 2014,
+    "wages": "$14"
+  },
+  {
+    "employeeName": "Melissa",
+    "hoursWorked": 30,
+    "hiredDate": 2016,
+    "wages": "$12"
+  },
+  {
+    "employeeName": "Horchata",
+    "hoursWorked": 40,
+    "hiredDate": 2020,
+    "wages": "$20"
+  },
+  {
+    "employeeName": "Rene",
+    "hoursWorked": 30,
+    "hiredDate": 2015,
+    "wages": "$20"
+  },
+  {
+    "employeeName": "Kelper",
+    "hoursWorked": 14,
+    "hiredDate": 2014,
+    "wages": "$14"
+  }
+]
