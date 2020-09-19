@@ -40,5 +40,23 @@
     "hoursWorked": 14,
     "hiredDate": 2014,
     "wages": "$14"
+  },
+  {
+    "employeeName": "Watcha",
+    "hoursWorked": 20,
+    "hiredDate": 1998,
+    "wages": "$10"
+  },
+  {
+    "employeeName": "Chad",
+    "hoursWorked": 60,
+    "hiredDate": 2012,
+    "wages": "$24"
+  }
+  {
+    "employeeName": "Felicia",
+    "hoursWorked": 50,
+    "hiredDate": 2013,
+    "wages": "$34"
   }
 ]
